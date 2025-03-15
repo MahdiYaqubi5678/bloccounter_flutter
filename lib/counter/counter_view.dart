@@ -8,7 +8,7 @@ class CounterView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // BODY
+      // UI
       body: BlocBuilder<CounterCubit, int>(
         builder: (context, state) {
           return Center(
