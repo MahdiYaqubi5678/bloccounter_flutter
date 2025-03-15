@@ -8,7 +8,6 @@ class CounterView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       // BODY
       body: BlocBuilder<CounterCubit, int>(
         builder: (context, state) {
@@ -22,7 +21,7 @@ class CounterView extends StatelessWidget {
           );
         },
       ),
-      
+
       // BUTTONS
       floatingActionButton: Column(
         mainAxisAlignment: MainAxisAlignment.end,
@@ -33,7 +32,10 @@ class CounterView extends StatelessWidget {
             child: const Icon(Icons.add),
           ),
 
-          const SizedBox(height: 10,),
+          // sizedbox
+          const SizedBox(
+            height: 10,
+          ),
 
           // decrement
           FloatingActionButton(
